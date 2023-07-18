@@ -1,0 +1,164 @@
+@import url(/assets/fontawesome-all.min.css);
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
+
+html, body {
+	margin: 0;
+	padding: 0;
+  }
+  
+  /* Set a background color for the body */
+  body {
+	background-color: #f0f0f0;
+  }
+  
+  /* Header */
+  #header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+  }
+  
+  #header .logo {
+	font-size: 24px;
+	font-weight: bold;
+  }
+  
+  /* Social icons */
+  .social {
+	margin: 10px;
+	text-align: center;
+  }
+  
+  .social .icons {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+  }
+  
+  .social .icons li {
+	display: inline-block;
+	margin-right: 10px;
+  }
+  
+  .social .icons li a {
+	color: #333;
+  }
+  
+  /* Menu */
+  #menu {
+	background-color: #f0f0f0;
+	padding: 20px;
+  }
+  
+  #menu .links {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+  }
+  
+  #menu .links li {
+	display: inline-block;
+	margin-right: 20px;
+  }
+  
+  #menu .links li a {
+	color: #333;
+	text-decoration: none;
+  }
+  
+  /* Banner */
+  #banner {
+	background-color: #fff;
+	padding: 50px;
+	text-align: center;
+  }
+  
+  #banner h1 {
+	font-size: 36px;
+  }
+  
+  #banner .subtext {
+	margin-top: 20px;
+  }
+  
+  /* Sections */
+  section {
+	background-color: #fff;
+	padding: 50px;
+  }
+  
+  section h2 {
+	font-size: 28px;
+  }
+  
+  /* Main */
+  #main {
+	margin-top: 50px;
+  }
+  
+  /* Tiles */
+  .tiles {
+	display: flex;
+	flex-wrap: wrap;
+  }
+  
+  .tiles article {
+	flex-basis: 50%;
+	padding: 10px;
+  }
+  
+  .tiles .image {
+	display: block;
+	margin-bottom: 10px;
+  }
+  
+  .tiles .text h3 {
+	font-size: 24px;
+  }
+  
+  .tiles .text p {
+	margin-top: 10px;
+  }
+  
+  /* Contact */
+  #contact {
+	background-color: #f0f0f0;
+	padding: 50px;
+  }
+  
+  #contact form {
+	margin-top: 20px;
+  }
+  
+  #contact form label {
+	display: block;
+	margin-bottom: 5px;
+  }
+  
+  #contact form input[type="text"],
+  #contact form textarea {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+  }
+  
+  #contact form input[type="submit"],
+  #contact form input[type="reset"] {
+	padding: 10px 20px;
+	background-color: #333;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+  }
+  
+  #contact form input[type="submit"].primary {
+	background-color: #cc0000;
+  }
+  
+  /* Footer */
+  #footer {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+  }
