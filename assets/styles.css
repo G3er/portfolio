@@ -2,8 +2,21 @@
 
 * {
   font-family: 'Roboto Condensed', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+}
 
-  /*font, commands for smooth, etc*/
+:root {
+  --main-color: #19202e;
+  --second-bg-color: #333;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 body {
@@ -17,11 +30,19 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
   background-color: #333;
+}
+
+ul {
+  list-style-type: none;
 }
 
 .navbar-links,
 .links {
+
   list-style: none;
   margin: 0;
   display: flex;
@@ -50,9 +71,14 @@ header {
 
 
 #banner {
+  height: 100vh;
   background-color: #555555;
   padding: 150px 50px;
   text-align: center;
+}
+
+.inner {
+  padding-top: 10%;
 }
 
 #banner h1 {
@@ -101,12 +127,12 @@ main {
   margin-top: 50px;
 }
 
-.cards {
+.projetos {
   display: flex;
   flex-wrap: wrap;
 }
 
-.cards article {
+.projetos article {
   flex-basis: calc(50% - 20px);
   margin: 10px;
   padding: 20px;
@@ -114,17 +140,17 @@ main {
   border-radius: 4px;
 }
 
-.cards .image {
+.projetos .image {
   display: block;
   margin-bottom: 10px;
 }
 
-.cards .text h3 {
+.projetos .text h3 {
   font-size: 24px;
   margin-bottom: 10px;
 }
 
-.cards .text p {
+.projetos .text p {
   margin-bottom: 10px;
 }
 
