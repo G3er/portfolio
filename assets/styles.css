@@ -13,6 +13,7 @@
 :root {
   --main-color: #19202e;
   --second-bg-color: #333;
+  --text-color: tomato;
 }
 
 html {
@@ -33,11 +34,17 @@ header {
   position: fixed;
   width: 100%;
   z-index: 100;
-  background-color: #333;
+  background-color: transparent;
+  box-shadow: 0 0 10px #342929;
 }
 
 ul {
   list-style-type: none;
+}
+
+.links {
+  font-size: 2rem;
+  color: var(--text-color);
 }
 
 .navbar-links,
@@ -54,11 +61,20 @@ ul {
   margin: 0;
 }
 
-.navbar-links a,
-.links a {
+.navbar-links, a {
   text-decoration: none;
   color: #fff;
-  font-size: 18px;
+}
+
+.navbar, .navbar-links, a:hover, .links {
+  color: var(--text-color);
+}
+
+#menu-icon {
+  font-size: 3rem;
+  color: var(--text-color);
+  cursor: pointer;
+  display: none;
 }
 
 .navbar {
@@ -66,6 +82,7 @@ ul {
 }
 
 .menu {
+  font-weight: 600;
   order: 2;
 }
 
@@ -80,6 +97,7 @@ ul {
 .inner {
   padding-top: 10%;
 }
+
 
 #banner h1 {
   font-size: 36px;
@@ -98,11 +116,12 @@ ul {
   margin-top: 40px;
   display: inline-block;
   padding: 10px 20px;
-  background-color: #cc0000;
+  background-color: #223484;
   color: #ffffff;
   text-decoration: none;
   border-radius: 4px;
 }
+
 
 #banner .subtext .button:hover {
   opacity: 0.8;
