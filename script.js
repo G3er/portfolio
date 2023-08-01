@@ -1,35 +1,36 @@
-
 let intro = document.querySelector('.intro');
-
-let logo = document.querySelector('.logo-header');
+let nameElement = document.querySelector('.name');
+let subtitleElement = document.querySelector('.subtitle');
 
 let logoSpan = document.querySelectorAll('.logo');
 
-window.addEventListener('DOMContentLoaded', ()=>{
+window.addEventListener('DOMContentLoaded', () => {
 
-    setTimeout(()=>{
-        
-        logoSpan.forEach((span, idx)=>{
-            setTimeout(()=>{
+    setTimeout(() => {
+
+        logoSpan.forEach((span, idx) => {
+            setTimeout(() => {
                 span.classList.add('active');
 
-            }, (idx + 1) * 600)
-        })
+            }, (idx + 1) * 600);
+        });
 
-        setTimeout(()=> {
-            logoSpan.forEach((span, idx)=> {
+        setTimeout(() => {
+            logoSpan.forEach((span, idx) => {
 
-                setTimeout(()=> {
+                setTimeout(() => {
                     span.classList.remove('active');
                     span.classList.add('fade');
-                }, (idx + 1) * 50)
-            })
-        },3000);
+                }, (idx + 1) * 50);
+            });
+        }, 2000);
 
-        setTimeout(()=>{
-            intro.style.top = '-100vh';
-        }, 2300)
+        setTimeout(() => {
+            nameElement.classList.add('show'); // Show the name
+            setTimeout(() => {
+                subtitleElement.classList.add('show'); // Show the subtitle after a delay
+            }, 500);
+        }, 1800);
 
-    })
-
-})
+    });
+});
