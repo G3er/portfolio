@@ -21,16 +21,16 @@ window.addEventListener('DOMContentLoaded', () => {
                 setTimeout(() => {
                     span.classList.remove('active');
                     span.classList.add('fade');
-                }, (idx + 1) * 50);
+                }, (idx + 1) * 100);
             });
         }, 2000);
 
         setTimeout(() => {
-            nameElement.classList.add('show'); // Show the name
+            nameElement.classList.add('show');
             setTimeout(() => {
-                subtitleElement.classList.add('show'); // Show the subtitle after a delay
+                subtitleElement.classList.add('show');
             }, 500);
-        }, 1800);
+        }, 800);
 
     });
 });
