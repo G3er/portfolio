@@ -13,7 +13,7 @@
 :root {
     --main-color: #19202e;
     --second-bg-color: #333;
-    --text-color: tomato;
+    --text-color: gray;
 }
 
 html {
@@ -185,7 +185,7 @@ ul {
   }
   
   .inner {
-    padding-top: 10%;
+    padding-top: 5%;
   }
   
   
@@ -210,16 +210,28 @@ ul {
   
   
   .button {
-    display: inline-block;
-    position: relative;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #ffffff;
-    font-size: 18px;
-    border: none;
-    cursor: pointer;
-    text-decoration: none;
-    border-radius: 4px;
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+
   }
 
   .button::after {
@@ -254,27 +266,34 @@ ul {
   }
 
   main {
-    margin-top: 30px;
+    margin-top:;
+    display: ;
   }
   
   #one {
-    display: flex;
     height: 100vh;
   }
+
+  img {
+    display: block;
+    margin: 0 auto 0 auto;
+  }
+
+
 
   .projetos {
     display: flex;
     flex-wrap: wrap;
-    height: 100vh;
+    height: 80vh;
   }
   
   .projetos article {
-    flex-basis: calc(50% - 20px);
-    margin: 10px;
-    padding: 20px;
+    flex-basis: calc(30% - 50px);
+    margin: 50px;
+    padding: 50px;
     background-color: #555555;
-    border-radius: 4px;
-  }
+    border-radius: 10px;
+}
   
   .projetos .image {
     display: block;
@@ -319,18 +338,18 @@ ul {
   #contact form input[type="submit"],
   #contact form input[type="reset"] {
     padding: 10px 20px;
-    background-color: #cc0000;
+    background-color: #655f5f;
     color: #ffffff;
     border: none;
     cursor: pointer;
   }
   
   #contact form input[type="submit"].primary {
-    background-color: #cc0000;
+    background-color: #766a6a;
   }
   
   #footer {
-    background-color: #333333;
+    background-color: #413b3b;
     color: #ffffff;
     padding: 20px;
     text-align: center;
